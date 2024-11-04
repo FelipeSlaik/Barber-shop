@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Sora", sans-serif;
+    text-decoration: none;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/bg_img.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    width: 100%;
+}
+
+.banner-container ul {
+    display: flex;
+    gap: 10px;
+}
+
+.icons-container{
+    display: flex;
+    gap: 1rem;
+}
+
+.fa-instagram,
+.fa-facebook{
+    color: #fff;
+    font-size: 1.5rem;
+    transition: 0.3s all;
+}
+.fa-instagram:hover,
+.fa-facebook:hover{
+    color: #dbdadb;
+    transform: scale(1.5);
+}
+
+.logo-container{
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logo-container img{
+    width: 100%;
+    height: auto;
+}
+
+.link{
+    width: 167px;
+    height: 38px;
+    border: 2px solid #bcbcbc;
+    text-align: center;
+    padding: 8px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.link a{
+    color: #fff;
+    transition: 0.3s ease;
+}
+.link a:hover{
+    color: #bcbcbc;
+}
+
+.titulo-banner-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 60%; 
+    gap: 2.8em;
+}
+
+.titulo p{
+    padding: 1em;
+    color: #fefbff;
+}
+
+.link-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-banner {
+    width: 200px;
+    height: 40px;
+    background-color: #d94140;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.button-banner:hover {
+    background-color: #b42b2b;
+    color: #fefbff;
+}
+
+
+@media (max-width: 768px) {
+    .banner-container {
+        flex-direction: column; /* Muda a direção para coluna em telas menores */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .link {
+        display: none; 
+    }
+
+    .titulo-banner-container {
+        height: auto; 
+    }
+
+    .button-banner {
+        width: 100%; 
+    }
+
+    .icons-container {
+        justify-content: center; 
+        padding: 10px 0;
+    }
+
+}
