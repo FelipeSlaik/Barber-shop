@@ -8,28 +8,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Barbearia</title>
 </head>
 
 <body>
     <header>
         <div class="banner-container">
-            <div class="icons-container" >
+            <div class="icons-container" data-aos="fade-right">
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
             </div>
                 
-            <div class="logo-container">
+            <div class="logo-container" data-aos="fade-down">
                 <img src="assets/logo-barbearia.png" alt="Logo da Barbearia">
             </div>
-            <div class="link">
-                <a href="#">Agendar horário</a>
+            <div class="link" data-aos="fade-left">
+                <a href="https://api.whatsapp.com/send?phone=5511999999999&text=Quero%fazer%meu%agendamento" target="_blank">Agendar horário</a>
             </div>
                 
         </div>
 
-        <div class="titulo-banner-container">
+        <div class="titulo-banner-container" data-aos="zoom-in">
             <div class="titulo">
                 <h1>ESTILO É UM REFLEXO DA SUA <br>
                     ATITUDE E SUA PERSONALIDADE.</h1>
@@ -37,20 +39,21 @@
             </div>
 
             <div class="link-button">
-                <a href="#" class="button-banner">Agendar horário</a>
+                <a href="https://api.whatsapp.com/send?phone=5511999999999&text=Quero%fazer%meu%agendamento" class="button-banner" target="_blank">Agendar horário</a>
             </div>
         </div>
     </header>
 
-    <main class="about-container">
-        <div class="container-image">
-        <img src="/assets/top.jpg" alt="" class="top-image">
+    <main class="about-container" data-aos="fade-up">
+        <div class="container-image" zoom-in>
+        
         <div class="bottom-images">
-            <img src="/assets/horizontal.jpg" alt="" class="horizontal">
-            <img src="/assets/vertical.jpg" alt="" class="vertical">
+            <img src="/assets/top.jpg" alt="" >
+            <img src="/assets/horizontal.jpg" alt="" >
+            <img src="/assets/vertical.jpg" alt="" class="horizontal">
         </div>
         </div>
-        <div class="about-text">
+        <div class="about-text"  data-aos="zoom-in">
             <div class="about">
                 <h1>Sobre</h1>
                 <p>Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin risus. Orci proin morbi vestibulum convallis leo vestibulum mus. Non duis augue eros mattis a quis sem sodales.</p>
@@ -59,7 +62,7 @@
         </div>
     </main>
 
-    <section class="services">
+    <section class="services" data-aos="fade-up">
         <div class="services-text">
             <h1>Serviços</h1>
             <h5>Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin risus. Orci proin morbi vestibulum convallis leo vestibulum mus. Non duis augue eros mattis a quis sem sodales.</h5>
@@ -68,9 +71,29 @@
         <div id="cards-container"></div>
     </section>
 
-    <footer>
-        
-    </footer>
+        <div class="footer" data-aos="fade-up">
+            <h2>Venha conhecer</h2>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1829.1272923346833!2d-47.133045534347126!3d-23.523344095182097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf13c3fe4c076b%3A0x4800461db6a9ba5!2sBarbearia%20Dom%20Passoni!5e0!3m2!1spt-BR!2sbr!4v1731077324396!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe data-aos="fade-up">
+
+        <footer data-aos="fade-down">
+            <div class="icons-footer">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+
+            <div class="logo-footer">
+                <img src="/assets/logo-barbearia.png" alt="logo-barbearia">
+            </div>
+
+            <p>Copyright© 2024 | Dom Passoni Barbearia  - Todos os direitos reservados.</p>
+        </footer>
+
+        <a href="https://api.whatsapp.com/send?phone=5511999999999&text=Quero%fazer%meu%agendamento" class="btn-whatsapp" target="_blank">
+            <img src="/assets/whatssapp.svg" alt="whatssapp">
+        </a>
+    
     <script src="/js/script.js"></script>
 </body>
 

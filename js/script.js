@@ -1,3 +1,5 @@
+AOS.init();
+
 const cardsData = [
     {Image: '/assets/horizontal.jpg', name: 'Corte de cabelo', price: 'R$ 45,00' },
     {Image: '/assets/horizontal.jpg', name: 'Barba completa', price: 'R$ 35,00' },
@@ -20,7 +22,7 @@ function createCards(data){
     const name = document.createElement('h5');
     name.textContent = data.name;
 
-    const price = document.createElement('p');
+    const price = document.createElement('button');
     price.textContent = data.price;
 
     infoContainer.appendChild(name);
